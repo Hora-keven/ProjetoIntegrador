@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+
+
+}
+#slider{
+  margin-top:50px;
+  margin-bottom: 0;
+  width: 100%; 
+  height: 35vw;
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+  z-index: 1000;
+}
+#slides{
+  color: rgb(255, 255, 255);
+  justify-content:  flex-end;
+  text-align: center;
+  font-size: 13ch;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  line-height: 1.33em;
+  width: 100%;
+  transition: 0.5s;
+}
+
+#slides:hover{
+  color: rgb(73, 189, 204);
+  transition: 0.5s;
+}
+
+
+
+#slider img{
+  opacity: 0;
+  position: absolute;
+  width: 20%;
+  object-fit: cover;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+#slider img.selected{
+  opacity: 1;
+  z-index: -1;
+
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1%;
+  color: #ffffff;
+ 
+}
+
+#header {
+  box-sizing: border-box;
+  height: 100px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000000;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.container{
+    display: grid;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1{
+    font-size: 5ch;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    background-color: black;
+    flex-direction: column;
+ 
+}
+
+
+ul{
+    list-style: circle;
+    text-align: center;
+    margin-top: 1%;
+    display: flex;
+    gap: 72px;
+    margin-left: 100px;
+    flex-wrap: wrap;
+}
+
+ul li a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px;
+    transition: 0.5s ease;
+    
+}
+
+ul:hover li a{
+    color:rgb(73, 189, 204);
+
+}
+ul:hover li a:not(:hover){
+    color: rgb(255, 255, 255);
+    opacity: 0.3;
+    filter: blur(1px);
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 0.5rem;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-left: 1px;
+  transition: 0.5s;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  
+}
+.card:hover{
+  box-shadow: 1px 10px 10px  rgba(0, 0, 0);
+  transition: 0.5s;
+ 
+}
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  transition: 5s;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3%;
+}
+ 
+H2{
+  font-size: 5ch;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+}
+
+p{
+  font-size: 3ch;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat,sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 40x;
+  line-height: 1.33em;
+  margin-bottom: 1%;
+}
+
+
+  .parallaxNotebook {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url(Imagens/notebook.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 2%;
+   
+  }
+
+ 
+button{
+    width:300px;
+    font-size: x-large;
+    border: #000000 solid 3px;
+    border-radius: 15px 15px 15px 15px;
+    color: #000000;
+    transition: 1s;
+    margin-top: 20%;
+   
+    background-color: rgb(255, 255, 255);
+  }
+  button:hover{
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+
+#carrinho{
+    height:80px;
+    width:auto;
+    margin-top: 0.5%;
+  }
+
+img{
+  width: 100%;
+
+ }
+.icon {
+  width: 250px;
+  height: 250px;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  width:  100%;
+  height: 100%;
+  color: #ffffff;
+  flex: 1 1 150px;
+  flex-wrap: wrap;
+}
+
+#footer{
+
+  padding: 50px;
+  font-family: Montserrat,sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+        
+}
+#bandeiras{
+  height: auto;
+  width:  auto;
+  justify-content: center;
+}
+@media screen and (max-width:1450px) {
+  body{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  .parallaxNotebook{
+    width: 100%;
+  }
+ 
+  .cards {
+    font-size: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    transition: 5s;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+
+  }
+  #slider{
+    margin-top:50px;
+    margin-bottom: 0;
+    width: 100%; 
+    height: 35vw;
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  #slides{
+    color: rgb(255, 255, 255);
+    justify-content:  flex-end;
+    text-align: center;
+    font-size: 7ch;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1.33em;
+    width: 100%;
+  
+  }
+  
+  #slider img{
+    opacity: 0;
+    position: absolute;
+    width: 39%;
+    height: 56%;
+    object-fit: cover;
+    margin-left: 38%;
+    margin-top: 8%;
+  }
+  
+  #slider img.selected{
+    opacity: 1;
+    width: 20%;
+   
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #000000;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 87vh);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+    gap: 0.5rem;
+    width: auto;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+ 
+  .cards .card {
+    margin-left: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 200px;
+    margin-left: 1px;
+   
+  
+ 
+}
+
+ 
+.card .icon{
+  width: 70px;
+  height: 70px;
+}
+img{
+  width: 100%;
+}
+
+.cards .card:last-child {
+    margin-bottom: 0;
+
+}
+
+.cards .card button {
+    font-size: 70%;
+    width: 100px;
+    height: 30px;
+    font-weight: 500;
+    border:  #000000  solid 3px;
+    border-radius: 15px 15px 15px 15px;
+    color: #000000;
+}
+.cards .card.notebook button {
+  background-color: rgb(255, 255, 255);
+}
+.cards .card.celulares button {
+  background-color: rgb(255, 255, 255);
+}
+.cards .card.celulares button:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+  
+}
+
+@media screen and (max-width:840px) {
+  body{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #000000;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 87vh);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #slider{
+    margin-top:50px;
+    margin-bottom: 0;
+    width: 100%; 
+    height: 38vw;
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  #slides{
+    color: rgb(255, 255, 255);
+    justify-content:  flex-end;
+    text-align: center;
+    font-size: 4ch;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1.33em;
+    width: 100%;
+  
+  
+  }
+  .parallaxNotebook{
+    background-image: url(Imagens/notebook300.png);
+    width: 100%;
+  }
+  
+  #slider img{
+    opacity: 0;
+    position: absolute;
+    width: 59%;
+    height: 59%;
+    object-fit: cover;
+    margin-left: 35%;
+    margin-top: 9%;
+  }
+  
+  #slider img.selected{
+    opacity: 1;
+  }
+  .cards {
+    font-size: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    transition: 5s;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+
+
+  }
+
+  .cards .card {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 180px;
+    margin-left: 1px;
+      
+  
+ 
+}
+
+.card .icon{
+  width: 70px;
+  height: 70px;
+}
+img{
+  width: 100%;
+}
+
+.cards .card:last-child {
+    margin-bottom: 0;
+
+}
+
+.cards .card button {
+    font-size: 85%;
+    width: 100px;
+    height: 25px;
+    font-weight: 500;
+    border:  #000000  solid 3px;
+    border-radius: 15px 15px 15px 15px;
+    color: #000000;
+}
+.cards .card.notebook button {
+  background-color: rgb(255, 255, 255);
+}
+.cards .card.celulares button {
+  background-color: rgb(255, 255, 255);
+}
+.cards .card.celulares button:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+.cards .card.notebook button:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+}
+
+@media screen and (max-width:450px) {
+  body{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #slider{
+    margin-top:50px;
+    margin-bottom: 0;
+    width: 100%; 
+    height: 35vw;
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  #slides{
+    color: rgb(255, 255, 255);
+    justify-content:  flex-end;
+    text-align: center;
+    font-size: 4ch;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1.33em;
+    width: 100%;
+  
+  
+  }
+  .parallaxNotebook{
+    background-image: url(Imagens/notebook450.png);
+  }
+  
+  #slider img{
+    opacity: 0;
+    position: absolute;
+    width: 59%;
+    height: 59%;
+    object-fit: cover;
+    margin-left: 35%;
+    margin-top: 6%;
+  }  
+}
+
+@media screen and (max-width:380px) {
+   h1 {
+      font-size: 2ch 
+  }
+
+    
+  .menu-openner {
+      font-size: 3rem;
+      width: 100%;
+  }
+  .parallaxNotebook{
+    background-image: url(Imagens/notebook300.png);
+  }
+  body{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+  #slider{
+    margin-top:50px;
+    margin-bottom: 0;
+    width: 100%; 
+    height: 35vw;
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  #slides{
+    color: rgb(255, 255, 255);
+    justify-content:  flex-end;
+    text-align: center;
+    font-size: 3ch;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1.33em;
+    width: 100%;
+  
+  
+  }
+  
+  #slider img{
+    opacity: 0;
+    position: absolute;
+    width: 59%;
+    height: 59%;
+    object-fit: cover;
+    margin-left: 35%;
+    margin-top: 6%;
+  }  
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+   
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 4px;
+    background: #000000;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 87vh);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #logo {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+    color: #ffffff;
+  }
+ 
+
+}
+
+
