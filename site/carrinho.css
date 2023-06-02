@@ -90,7 +90,8 @@ aside {
 aside.show {
     width:30vw; 
     z-index: 9;
-    position: absolute;
+    position: fixed;
+    
 }
 
 
