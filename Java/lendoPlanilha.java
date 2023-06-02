@@ -1,49 +1,24 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
-public class Main {
+public class Write {
     public static void main(String[] args) {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter your text:");
+        String csvFile = "C://Users//53688621808//Documents//planilhas//motorola.csv";
+        String line = "";
+        String csvSeparator = ",";
 
-        try {
-            String text = br.readLine();
-
-            System.out.println("Do you want to save the text to a file? (Y/N)");
-            String choice = br.readLine();
-
-            if (choice.equalsIgnoreCase("Y")) {
-                Write write = new Write();
-
-
-
-            } else {
-                System.out.println("Text not saved");
-            }
-
-            System.out.println("Do you want to read the text file content? (Y/N)");
-            choice = br.readLine();
-
-            if (choice.equalsIgnoreCase("Y")) {
-                System.out.println("Enter the path:");
-                String filePath= br.readLine();
-                System.out.println("Enter the filename:");
-                String filename = br.readLine();
-
-                File file = new File(filePath+filename);
-                FileReader fr = new FileReader(file);
-                BufferedReader br2 = new BufferedReader(fr);
-
-                String line;
-                while ((line = br2.readLine()) != null) {
-                    System.out.println(line);
+        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+            while ((line = br.readLine()) != null) {
+                String[] data = line.split(csvSeparator);
+                for (String value : data) {
+                    System.out.print(value + " ");
                 }
-
-                br2.close();
-                fr.close();
+                System.out.println();
             }
-
         } catch (IOException e) {
-            System.err.println("Error: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
+
