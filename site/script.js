@@ -37,7 +37,7 @@ const botoesFechar = () => {
     selecionaTodos('.celInfo--cancelButton, .celInfo--cancelMobileButton').forEach( (item) => item.addEventListener('click', fecharModal) )
 }
 
-const preencheDadosDasPizzas = (celItem, item, index) => {
+const preencheDadosDosCelulares = (celItem, item, index) => {
    
 	celItem.setAttribute('data-key', index)
     celItem.querySelector('.cel-item--img img').src = item.img
@@ -257,7 +257,7 @@ celJson.map((item, index ) => {
   
     seleciona('.cel-area').append(celItem)
 
-    preencheDadosDasPizzas(celItem, item, index)
+    preencheDadosDosCelulares(celItem, item, index)
     
     celItem.querySelector('.cel-item a').addEventListener('click', (e) => {
         e.preventDefault()

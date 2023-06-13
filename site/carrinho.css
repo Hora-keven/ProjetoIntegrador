@@ -154,17 +154,21 @@ h1, h2 {
     height:35px;
     line-height:34px;
     border-radius:15px;
-    background-color:#000000;
+    background-color:#ffffff;
     text-align:center;
-    color:#FFF;
+    color:#000000;
+    border: #000 solid 3px;
     font-size:22px;
     cursor:pointer;
     margin-top:10px;
-    transition:all ease .2s;
+    transition:1s;
 }
+
 
 .cel-item a:hover .cel-item--add {
     background-color:#000000;
+    color: #ffffff;
+    transition:1s;
 }
 #logo {
     font-weight: bold;
@@ -337,15 +341,19 @@ h1, h2 {
     margin-top:30px;
     padding:20px 30px;
     border-radius:20px;
-    background-color:#48d05f;
-    color:#FFF;
+    background-color:#ffffff;
+    color:#000000;
     display:inline-block;
     cursor:pointer;
+    border: #000 solid 3px;
     margin-right:30px;
+    transition: 1s;
 }
 
 .celInfo--addButton:hover {
-    background-color:#32a345;
+    background-color:#000000;
+    color: #ffffff;
+    transition: 1s;
 }
 
 .celInfo--cancelButton {
@@ -429,18 +437,33 @@ h1, h2 {
 .cart--finalizar {
     padding:20px 30px;
     border-radius:20px;
-    background-color:#48d05f;
-    color:#FFF;
+    background-color:#ffffff;
+    color:#000000;
     cursor:pointer;
     text-align:center;
     margin-top:20px;
-    border:2px solid #63f77c;
-    transition: all ease .2s;
+    border:3px solid #000000;
+    transition: 1s;
 }
 
 .cart--finalizar:hover {
-    background-color:#35af4a;
+    background-color:#000000;
+    color: #ffffff;
 }
+#footer{
+
+    padding: 50px;
+    font-family: Montserrat,sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+          
+  }
+  #bandeiras{
+    height: auto;
+    width:  auto;
+    justify-content: center;
+  }
 
 @media (max-width:1450px) {
     .cel-area {
